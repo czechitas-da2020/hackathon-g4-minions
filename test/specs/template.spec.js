@@ -26,9 +26,6 @@ describe('Template suite', () => {
         let subject = $("#subject").setValue("reklamace");
         let comments = $("#comment").setValue("nefunguje zip");
         let submit = $(".form-actions #submitContact").click();
-        expect($("#store.success")).toHaveText("Your message has been sent");
+        expect($('.alert.alert-success')).toBeDisplayedInViewport();
     })
-    it('template test-case', () => {
-        
     })
-})
