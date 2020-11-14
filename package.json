@@ -1,0 +1,25 @@
+{
+  "name": "hackathon",
+  "version": "1.0.0",
+  "description": "Automatizovane testy, Hackaton DA: Ostrava 2020",
+  "main": "index.js",
+  "scripts": {
+    "test": "wdio wdio.conf.js",
+    "test:firefox": "wdio wdio.conf.firefox.js",
+    "install-selenium": "./node_modules/.bin/selenium-standalone install",
+    "start-selenium": "./node_modules/.bin/selenium-standalone start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wdio/cli": "^6.5.0",
+    "@wdio/local-runner": "^6.5.0",
+    "@wdio/mocha-framework": "^6.5.0",
+    "@wdio/spec-reporter": "^6.4.7",
+    "@wdio/sync": "^6.5.0",
+    "chromedriver": "^85.0.1",
+    "wdio-chromedriver-service": "^6.0.4",
+    "selenium-standalone": "^6.20.1"
+  }
+}
